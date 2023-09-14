@@ -1,10 +1,10 @@
-def fact_rec(n):
-  if n==0 or n==1:
-    return 1
-  else:
-    return n*fact_rec(n-1)
+year = 2000
+if (year % 400 == 0) and (year % 100 == 0):
+    print("{0} is a leap year".format(year))
 
-number =int (input ("Enter a value :"))
-res=fact_rec(number)
+# not divided by 100 means not a century year
+# year divided by 4 is a leap year
+elif (year % 4 ==0) and (year % 100 != 0):
+    print("{0} is a leap year".format(year))
 
-print ("The factorial of {} is {}". format (number,res)) 
+  
